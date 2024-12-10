@@ -1,71 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spam Email Classification using NLP and Machine Learning</title>
-</head>
-<body>
-    <h1>Spam Email Classification using NLP and Machine Learning</h1>
-    <p>This project demonstrates a spam email classification system using Natural Language Processing (NLP) and Machine Learning algorithms. The system classifies emails as either spam or ham (non-spam). This guide provides the steps to set up the environment, install dependencies, and run the application.</p>
-    
-    <h2>Steps to Set Up the Project</h2>
+<h1>Spam Email Classification using NLP and Machine Learning</h1>
+<p>This project demonstrates a spam email classification system using Natural Language Processing (NLP) and Machine Learning algorithms. The system classifies emails as either spam or ham (non-spam). This guide provides the steps to set up the environment, install dependencies, and run the application.</p>
+<p>teps to Set Up the Project
+1. Open Anaconda Prompt
+Launch the Anaconda Prompt from the Start Menu.
 
-    <h3>1. Open Anaconda Prompt</h3>
-    <p>Launch the <strong>Anaconda Prompt</strong> from the Start Menu.</p>
+2. Check Available Conda Environments
+To view all conda environments on your system, run:
 
-    <h3>2. Check Available Conda Environments</h3>
-    <p>To view all conda environments on your system, run:</p>
-    <pre><code>conda env list</code></pre>
+bash
+Copy code
+conda env list
+3. Check the Python Version
+Verify the Python version installed in the current environment:
 
-    <h3>3. Check the Python Version</h3>
-    <p>Verify the Python version installed in the current environment:</p>
-    <pre><code>python --version</code></pre>
+css
+Copy code
+python --version
+4. Create a New Conda Environment
+Create a new conda environment with the desired Python version (e.g., Python 3.10):
 
-    <h3>4. Create a New Conda Environment</h3>
-    <p>Create a new conda environment with the desired Python version (e.g., Python 3.10):</p>
-    <pre><code>conda create --name Spam_Class python=3.10</code></pre>
+lua
+Copy code
+conda create --name Spam_Class python=3.10
+5. Activate the New Environment
+Activate the newly created environment:
 
-    <h3>5. Activate the New Environment</h3>
-    <p>Activate the newly created environment:</p>
-    <pre><code>conda activate Spam_Class</code></pre>
+Copy code
+conda activate Spam_Class
+6. Install Required Packages
+Install the necessary libraries for your project:
 
-    <h3>6. Install Required Packages</h3>
-    <p>Install the necessary libraries for your project:</p>
-    <pre><code>pip install pandas</code></pre>
-    <pre><code>pip install scikit-learn</code></pre>
-    <pre><code>conda install ipykernel</code></pre>
-    <pre><code>pip install streamlit</code></pre>
+Copy code
+pip install pandas
+pip install scikit-learn
+conda install ipykernel
+pip install streamlit
+7. Open VS Code
+Launch Visual Studio Code (VS Code) to begin working on your project.
 
-    <h3>7. Open VS Code</h3>
-    <p>Launch <strong>Visual Studio Code (VS Code)</strong> to begin working on your project.</p>
+8. Create a Working Folder
+Create a folder for your project, for example: AICTE_SPAM_PRO.
 
-    <h3>8. Create a Working Folder</h3>
-    <p>Create a folder for your project, for example: <strong>AICTE_SPAM_PRO</strong>.</p>
+9. Open the Project Folder in VS Code
+In VS Code, open the folder by navigating to:
 
-    <h3>9. Open the Project Folder in VS Code</h3>
-    <p>In VS Code, open the folder by navigating to: <code>File &gt; Open Folder &gt; Select the AICTE_SPAM_PRO folder</code></p>
+mathematica
+Copy code
+File > Open Folder > Select the AICTE_SPAM_PRO folder
+10. Create or Open a Jupyter Notebook
+Create or open the notebook spam_email_classification.ipynb in the project folder. Ensure the environment is set to Spam_Class in VS Code.
 
-    <h3>10. Create or Open a Jupyter Notebook</h3>
-    <p>Create or open the notebook <strong>spam_email_classification.ipynb</strong> in the project folder. Ensure the environment is set to <strong>Spam_Class</strong> in VS Code.</p>
+11. Train and Save the Model
+Train the model and save it as spam.pkl using the appropriate training scripts in your Jupyter Notebook.
 
-    <h3>11. Train and Save the Model</h3>
-    <p>Train the model and save it as <strong>spam.pkl</strong> using the appropriate training scripts in your Jupyter Notebook.</p>
+12. Run the Streamlit Web Application
+Create and run the Streamlit app using the file spamDetector.py. The app will classify email input as either spam or ham.
 
-    <h3>12. Run the Streamlit Web Application</h3>
-    <p>Create and run the Streamlit app using the file <strong>spamdetector.py</strong>. The app will classify email input as either spam or ham.</p>
+13. Open Integrated Terminal in VS Code
+Open the integrated terminal in VS Code to run the application. Ensure the correct environment (Spam_Class) is activated.
 
-    <h3>13. Open Integrated Terminal in VS Code</h3>
-    <p>Open the integrated terminal in VS Code to run the application. Ensure the correct environment (<strong>Spam_Class</strong>) is activated.</p>
+14. Run the Streamlit App
+Run the Streamlit app using the command:
 
-    <h3>14. Run the Streamlit App</h3>
-    <p>Run the Streamlit app using the command:</p>
-    <pre><code>streamlit run spamdetector.py</code></pre>
+arduino
+Copy code
+streamlit run spamDetector.py
+Troubleshooting
+If there are any issues with the environment, ensure you have selected the correct environment (Spam_Class) in VS Code.
 
-    <h2>Troubleshooting</h2>
-    <p>If there are any issues with the environment, ensure you have selected the correct environment (<strong>Spam_Class</strong>) in VS Code.</p>
+Conclusion
+By following these steps, you can set up the environment, train the model, and deploy the spam email classifier using Streamlit.
 
-    <h2>Conclusion</h2>
-    <p>By following these steps, you can set up the environment, train the model, and deploy the spam email classifier using Streamlit.</p>
-</body>
-</html>
+File Names Used:
+Spam Detector.ipynb: Jupyter notebook used for training and testing the model.
+spam123.pkl and vec123.pkl: The saved trained model file.
+spamdetector.py: Python script for deploying the Streamlit web application.</p>
